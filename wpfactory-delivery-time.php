@@ -157,7 +157,7 @@ if (!function_exists('woocomerce_deliverytime_tab')) {
 
         $delivery_default       = get_option('wcdeliverytime_value');
         $delivery_product       = $product->get_meta('_deliverytime');
-        $delivery_display       = get_option('wcdeliverytime_display');
+        $delivery_display       = get_option('wcdeliverytime_display') ? get_option('wcdeliverytime_display') : array();
         $delivery_time          = $delivery_product ? $delivery_product : $delivery_default;
 
         if ($delivery_product == 0) { $delivery_time = $delivery_default; }
@@ -260,7 +260,7 @@ if (!function_exists('get_wc_deliverytime_description_archive')) {
 
         $delivery_default       = get_option('wcdeliverytime_value');
         $delivery_product       = $product->get_meta('_deliverytime');
-        $delivery_display       = get_option('wcdeliverytime_display');
+        $delivery_display       = get_option('wcdeliverytime_display') ? get_option('wcdeliverytime_display') : array();
         $delivery_time          = $delivery_product ? $delivery_product : $delivery_default;
 
         if ($delivery_product == 0) { $delivery_time = $delivery_default; }
