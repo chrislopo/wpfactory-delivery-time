@@ -1,2 +1,4 @@
-# wpfactory-delivery-time
-Custom plugin made as a WP Factory task for displaying delivery time on single and archive pages.
+# Delivery Time for Woocommerce
+Custom Wordpress plugin made for WP Factory.
+
+It displays a delivery time info on single and archive pages.
